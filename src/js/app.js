@@ -6,5 +6,7 @@
 /* eslint-disable class-methods-use-this */
 
 import Collapse from './Collapse';
+import Feedback from './Feedback';
 
 const collapse = new Collapse('.collapse-container');
+const feedback = new Feedback('.feedback-container');
