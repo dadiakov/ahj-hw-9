@@ -5,7 +5,7 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable class-methods-use-this */
 
-import Collapse from './collapse';
+import Collapse from './Collapse';
 
 const collapse = new Collapse('.collapse-container');
 console.log(collapse);
