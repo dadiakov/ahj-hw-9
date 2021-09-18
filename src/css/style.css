@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.collapse-container {
+  margin: 50px;
+  max-width: 600px;
+  min-height: 400px;
+  padding: 2px;
+  border: 2px solid lightgray;
+  background-color: rgba(245, 245, 245, 0.986);
+}
+
+.collapse-outer-div {
+  background-color: white;
+  padding: 25px;
+}
+
+.collapse-button {
+  width: 100px;
+  height: 35px;
+  background-color: rgb(64, 82, 240);
+  color: white;
+  font-size: 100%;
+  border-radius: 10px;
+  outline-color: rgb(64, 82, 240);
+}
+
+.copy {
+  text-align: right;
+  padding: 5px;
+  color: darkgray;
+  font-size: small;
+}
+
+.collapse-content {
+  height: 200px;
+  overflow: hidden;
+  transition: height 1s ease;
+}
+
+.collapse-content-hide {
+  height: 5px;
+}
