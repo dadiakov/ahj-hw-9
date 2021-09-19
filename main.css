@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  min-width: 1200px;
+  max-width: 1200px;
+  border: 2px dashed lightgray;
+  position: relative;
+}
+
+.collapse-container {
+  margin: 50px;
+  max-width: 600px;
+  min-height: 400px;
+  padding: 2px;
+  border: 2px solid lightgray;
+  background-color: rgba(245, 245, 245, 0.986);
+}
+
+.collapse-outer-div {
+  background-color: white;
+  padding: 25px;
+}
+
+.collapse-button {
+  width: 100px;
+  height: 35px;
+  background-color: rgb(64, 82, 240);
+  color: white;
+  font-size: 100%;
+  border-radius: 10px;
+  outline-color: rgb(64, 82, 240);
+}
+
+.copy {
+  text-align: right;
+  padding: 5px;
+  color: darkgray;
+  font-size: small;
+}
+
+.collapse-content {
+  height: 200px;
+  overflow: hidden;
+  transition: height 1s ease;
+}
+
+.collapse-content-hide {
+  height: 5px;
+}
+
+.feedback-container {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  display: flex;
+  width: 350px;
+  min-height: 320px;
+}
+
+.feedback-form-container {
+  display: none;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  margin: auto;
+  padding: 25px;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.feedback-form-button {
+  display: block;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border-color: lightgray;
+  font-family: inherit;
+}
+
+.feedback-from-textarea {
+  min-width: 100%;
+  max-width: 100%;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+.feedback-close {
+  position: absolute;
+  font-size: large;
+  top: 5px;
+  right: 25px;
+  cursor: default;
+}
+
+.feedback-red-button {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: red;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.feedback-red-button:hover {
+  animation-duration: 0.3s;
+  animation-name: redbutton-hover;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes redbutton-hover {
+  from {
+    width: 55px;
+    height: 55px;
+    bottom: -15px;
+    right: -15px;
+  }
+
+  to {
+    width: 65px;
+    height: 65px;
+    bottom: -20px;
+    right: -20px;
+  }
+}
+
+.close {
+  opacity: 0;
+}
+
+.not-active {
+  display: block;
+}
+
