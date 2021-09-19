@@ -91,6 +91,7 @@ body {
   font-size: large;
   top: 5px;
   right: 30px;
+  cursor: default;
 }
 
 .feedback-red-button {
