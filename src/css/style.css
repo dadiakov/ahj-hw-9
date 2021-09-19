@@ -111,6 +111,7 @@ body {
   animation-name: redbutton-hover;
   animation-direction: normal;
   animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 @keyframes redbutton-hover {
